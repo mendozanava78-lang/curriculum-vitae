@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae - Contacto</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <h1>Contacto</h1>
+    <!-- Menú de  navegación-->
+    <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
+    <a href="perfil.html">Perfil</a>&nbsp;&nbsp;&nbsp;
+    <a href="experiencia.html">Experiencia</a>&nbsp;&nbsp;&nbsp;
+    <a href="habilidades.html">Habilidades</a>&nbsp;&nbsp;&nbsp;
+    <a href="contacto.html">Contacto</a>&nbsp;&nbsp;&nbsp;
+
+    <h2>Formulario de contactos</h2>
+    <!--Elementos de formulario-->
+    <form method="get" action="">
+        <p>
+            <label>Nombre</label>
+            <input type="text" id="nombre" name="nombre"
+            autofocus required>
+        </p>
+
+        <p>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" size="50"
+            required>
+        </p>
+
+        <p>
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo"
+            placeholder="Escriba su correo" required>
+        </p>
+
+        <p>
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono"
+            placeholder="Escriba su teléfono"
+            required pattern="[0-9] + $">
+        </p>
+
+        <p>
+            <label for="pais">País</label>
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione ...</option>
+                <option value="mex">México</option>
+                <option value="ita">Italia</option>
+                <option value="rus">Rusia</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="comentario">Mensaje</label>
+            <br>
+            <textarea cols="60" rows="6"
+            required id="comentario"
+            name="comentario"
+            placeholder="Escriba su mensaje">
+        </textarea>
+        </p>
+        <p>
+            <input type="submit"
+            name="enviar"
+            value="Enviar Información">
+        </p>
+    </form>
+</body>
+</html>
